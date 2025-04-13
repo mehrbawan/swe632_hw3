@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - UI AI</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <!-- External CSS file -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top w-100 px-4">
+    <a class="navbar-brand" href="#">
+      UI AI
+      <i class="fas fa-bolt text-red-gradient"></i>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+      aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-4">
+        <li class="nav-item">
+          <a class="nav-link" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <button class="btn btn-outline-teal me-2 rounded-pill" type="button">Sign Up</button>
+        <button class="btn btn-teal rounded-pill" type="button">Log In</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="sidebar">
+    <ul style="list-style: none; padding: 0; margin-top: 70px;">
+      <li class="sidebar-li"><a href="dashboard.html"><i class="fas fa-home" style="font-size: 20px;"></i> Dashboard</a></li>
+      <li class="sidebar-li"><a href="generator.html" class="active"><i class="fas fa-code" style="font-size: 20px;"></i> Generator</a></li>
+      <li class="sidebar-li"><a href="analyze.html" ><i class="fas fa-chart-bar" style="font-size: 20px;"></i> Analyze</a></li>
+      <li class="sidebar-li"><a href="code-review.html"><i class="fas fa-file-code" style="font-size: 20px;"></i> Code Review</a></li>
+      <li class="sidebar-li"><a href="settings.html"><i class="fas fa-gear" style="font-size: 20px;"></i> Settings</a></li>
+      <li class="sidebar-li"><a href="logout.html"><i class="fas fa-right-from-bracket" style="font-size: 20px;"></i> Log Out</a></li>
+    </ul>
+    <li class="sidebar-li pt-5" style="margin-top: 100px;">
+      <div class="d-flex align-items-center">
+        <img src="avatar.jpg" alt="Example" class="img-fluid me-3" style="width: 50px; height: 50px; object-fit: cover; border-radius: 50%;">
+        <div>
+          <p class="mb-1 fw-bold mini-text">Example User</p>
+          <p class="mb-0 text-muted">example@user.com</p>
+        </div>
+      </div>
+    </li>
+  </div>
+
+  <div class="sidebar2">
+    <div class="container py-5">
+      <h3 class="text-center mb-4 mini-text mt-4" style="font-weight:bold;" >Popular Components</h3>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Login Form">Login Form</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Registration Form">Registration Form</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Shopping Cart">Shopping Cart</button>
+      </div>
+      <div class="col">
+        <button id="generateNavbar" class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Navbar">Navbar</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Carousel">Carousel</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Modal">Modal</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Accordion">Accordion</button>
+      </div>
+      <div class="col">
+        <button class="btn btn-outline-teal rounded-pill w-100 mb-4" data-component="Data Table">Data Table</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid py-5 mt-5 custom-container">
+    
+    <h1 class="text-center mb-4">
+      <span class="text-red-gradient">UI Code Generator</span>
+      <i class="fas fa-bolt text-red-gradient"></i>
+    </h1>
+    <h3 class="text-center text-gray mb-5">Describe the component you need and we'll generate the code instantly.</h3>
+
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <div class="card">
+          <div class="card-body">
+            <div class="mb-4">
+              <textarea class="form-control" rows="5"
+                placeholder="Describe the UI component you need (e.g., 'A login form with email, password fields, and a remember me checkbox')"></textarea>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <button class="btn btn-teal rounded-pill me-2">
+                  <i class="fas fa-magic me-2"></i>Generate
+                </button>
+                <button class="btn btn-outline-teal rounded-pill">
+                  <i class="fas fa-random me-2"></i>Random Example
+                </button>
+              </div>
+              <div>
+                <select class="form-select d-inline-block" style="width: auto;">
+                  <option>HTML/CSS</option>
+                  <option>React</option>
+                  <option>Vue</option>
+                  <option>Angular</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <span class="text-red-gradient" style="font-weight:bold">Generated Code</span>
+            <div>
+              <button class="btn btn-sm btn-teal rounded-pill me-2">
+                <i class="fas fa-copy me-1"></i>Copy
+              </button>
+
+            </div>
+          </div>
+          <div class="card-body p-0">
+            <pre class="m-0 p-3 bg-light"><code id="generatedCode">// Your generated code will appear here</code></pre>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <div class="card-header text-red-gradient" style="font-weight:bold">
+            Live Preview
+          </div>
+          <div class="card-body text-center">
+            <iframe class="w-100 border rounded" height="300" style="background: white;"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('generateNavbar').addEventListener('click', function () {
+      fetch('./components.json')
+        .then(response => response.json())
+        .then(data => {
+          const navbarComponent = data.components.find(component => component.name.toLowerCase() === 'navbar');
+          if (navbarComponent) {
+            document.getElementById('generatedCode').textContent = navbarComponent.code.html;
+          } else {
+            console.error('Navbar component not found in components.json');
+          }
+        })
+        .catch(error => console.error('Error fetching components.json:', error));
+    });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.sidebar2 button[data-component]').forEach(button => {
+      button.addEventListener('click', function () {
+        const componentName = this.getAttribute('data-component').toLowerCase();
+
+        fetch('./components.json')
+          .then(response => response.json())
+          .then(data => {
+            const component = data.components.find(c => c.name.toLowerCase() === componentName);
+            if (component && component.code && component.code.html) {
+              document.getElementById('generatedCode').textContent = component.code.html;
+              const iframe = document.querySelector('iframe');
+              if (iframe) {
+                iframe.srcdoc = component.code.html;
+              }
+            } else {
+              console.error(`${componentName} not found or invalid code.`);
+            }
+          })
+          .catch(error => console.error('Error loading component:', error));
+      });
+    });
+  });
+</script>
+
+
+</body>
+
+</html>

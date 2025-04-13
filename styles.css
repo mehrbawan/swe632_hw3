@@ -1,0 +1,200 @@
+.scroller__inner {
+    display: flex;
+    gap: 1rem;
+    animation: scroll var(--_animation-duration, 40s) linear infinite;
+  }
+.scroller {
+    width: 100vw; /* Make the scroller fill the screen width */
+    overflow: hidden;
+    margin: 0 auto; /* Center the scroller if needed */
+}
+  
+  @keyframes scroll {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  body {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    font-family: system-ui;
+    background-color: #ffffff; /* Change background to white */
+}
+
+  .tag-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tag-list li {
+  }
+
+.text-gray {
+  color: rgb(42, 42, 42); /* Set the default color for the heading */
+}
+
+.text-red-gradient {
+  background: -webkit-linear-gradient(#ff0967, #ffa200);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 20px;
+  color: rgb(42, 42, 42); /* Set the default color for the heading */
+}
+
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.scaled-image {
+  width: 32%; /* Set the width to 50% of its original size */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 230, 230, 0.8); /* Teal glow on hover */
+  transition: box-shadow 0.3s ease; /* Smooth transition */
+  background-color: rgb(217, 244, 250);
+}
+
+.card{
+  background-color: rgb(246, 254, 255);
+  border-radius: 1rem; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.text-gray {
+  color: rgb(31, 30, 30); /* Set text color to gray */
+}
+
+.btn-teal {
+  background-color: #26bace; /* Teal background */
+  color: white; /* White text */
+  border: none; /* Remove border */
+  border: 1px solid #26bace; /* Teal border */
+}
+
+.btn-teal:hover {
+  background-color: #26bace; /* Darker teal on hover */
+}
+
+.btn-outline-teal {
+  background-color: transparent; /* Transparent background */
+  color: #26bace; /* Teal text */
+  border: 1px solid #26bace; /* Teal border */
+}
+
+.btn-outline-teal:hover {
+  background-color: #26bace; /* Teal background on hover */
+  color: white; /* White text on hover */
+}
+
+.navbar-brand
+{
+  font-size: 30px;
+  font-weight: bolder;
+  color: #26bace; /* Teal text */
+  font-style: italic;
+}
+
+.text-card-red
+{
+  color:  rgb(73, 66, 66);
+}
+
+.btn-teal:hover,
+.btn-outline-teal:hover {
+  background-color: rgb(255, 104, 119) ; /* Change background to salmon on hover */
+  color: white ; /* Ensure text is white for contrast */
+  border-color: rgb(255, 104, 119) ; /* Update border color for outline buttons */
+}
+
+
+
+.sidebar {
+  width: 250px;
+  background-color: #ffffff; /* Teal background */
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  font-family: 'Arial', sans-serif; /* Match the font with the rest of the theme */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.sidebar2 {
+  width: 250px;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  font-family: 'Arial', sans-serif; /* Match the font with the rest of the theme */
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  border-radius: 5px; /* Add rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+  color: rgb(64, 54, 54);
+
+}
+
+.sidebar a:hover {
+  background-color: rgb(255, 115, 0);
+  color: white; /* Ensure text remains white */
+}
+
+.sidebar .sidebar-li {
+  margin-bottom: 15px; /* Add spacing between items */
+}
+
+.sidebar .sidebar-logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar .sidebar-li .active {
+  background-color: rgb(255, 104, 119); /* Highlight active link with salmon */
+  color: white;
+}
+
+.custom-container {
+  width: 1000px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the content */
+}
+
+.mini-text
+{
+  color: rgb(255, 115, 0)
+}

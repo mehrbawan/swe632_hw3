@@ -114,10 +114,10 @@
             </div>
             <div class="d-flex justify-content-between">
               <div>
-                <button class="btn btn-teal rounded-pill me-2">
+                <button class="btn btn-teal rounded-pill me-2" id="generateButton">
                   <i class="fas fa-magic me-2"></i>Generate
                 </button>
-                <button class="btn btn-outline-teal rounded-pill">
+                <button id="randomExample" class="btn btn-outline-teal rounded-pill">
                   <i class="fas fa-random me-2"></i>Random Example
                 </button>
               </div>
@@ -201,6 +201,61 @@
     });
   });
 </script>
+
+<script>
+  document.getElementById('randomExample').addEventListener('click', function () {
+    // Fetch the components.json file
+    fetch('./components.json')
+      .then(response => response.json())
+      .then(data => {
+        // Get a random component from the components array
+        const randomIndex = Math.floor(Math.random() * data.components.length);
+        const randomComponent = data.components[randomIndex];
+
+        if (randomComponent && randomComponent.code && randomComponent.code.html) {
+          // Insert the random component's code into the "Generated Code" box
+          document.getElementById('generatedCode').textContent = randomComponent.code.html;
+
+          // Update the live preview
+          const iframe = document.querySelector('iframe');
+          if (iframe) {
+            iframe.srcdoc = randomComponent.code.html;
+          }
+        } else {
+          console.error('Random component not found or invalid code.');
+        }
+      })
+      .catch(error => console.error('Error fetching components.json:', error));
+  });
+</script>
+
+<script>
+  document.getElementById('generateButton').addEventListener('click', function () {
+    // Fetch the components.json file
+    fetch('./components.json')
+      .then(response => response.json())
+      .then(data => {
+        // Get a random component from the components array
+        const randomIndex = Math.floor(Math.random() * data.components.length);
+        const randomComponent = data.components[randomIndex];
+
+        if (randomComponent && randomComponent.code && randomComponent.code.html) {
+          // Insert the random component's code into the "Generated Code" box
+          document.getElementById('generatedCode').textContent = randomComponent.code.html;
+
+          // Update the live preview
+          const iframe = document.querySelector('iframe');
+          if (iframe) {
+            iframe.srcdoc = randomComponent.code.html;
+          }
+        } else {
+          console.error('Random component not found or invalid code.');
+        }
+      })
+      .catch(error => console.error('Error fetching components.json:', error));
+  });
+</script>
+
 
 
 </body>

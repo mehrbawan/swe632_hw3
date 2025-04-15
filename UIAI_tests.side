@@ -1,0 +1,502 @@
+{
+  "id": "bc786454-3ff2-406a-b138-115f26895bfc",
+  "version": "3.0",
+  "name": "New Project",
+  "url": "http://www.google.com",
+  "urls": [
+    "http://www.google.com"
+  ],
+  "plugins": [],
+  "suites": [
+    {
+      "id": "6329f13f-35fe-46fa-9c25-92d2a30bc267",
+      "name": "New Suite",
+      "parallel": false,
+      "persistSession": false,
+      "tests": [
+        "f1307edd-8604-44af-aacf-2a9749b2dd7e"
+      ],
+      "timeout": 30000
+    }
+  ],
+  "tests": [
+    {
+      "id": "f1307edd-8604-44af-aacf-2a9749b2dd7e",
+      "name": "New Test",
+      "commands": [
+        {
+          "command": "click",
+          "target": "css=.btn-teal:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "52d45b23-d3db-4eda-a467-ae39f3c84559",
+          "targets": [
+            [
+              "css=.btn-teal:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='button' and text()='Get Started'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Get Started')]",
+              "xpath:innerText"
+            ]
+          ],
+          "isBreakpoint": true
+        }
+      ]
+    },
+    {
+      "id": "496a8270-5894-4f7c-a653-5d17fc0c29e5",
+      "name": "test_generator_navbar_component_button",
+      "commands": [
+        {
+          "id": "3bb49a54-bca4-4d13-becc-2c8c356d7ac6",
+          "command": "open",
+          "target": "https://mehrbawan.github.io/swe632_hw3/generator.html",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "css=.btn-teal:nth-child(1)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f83654dd-feba-4804-8ddc-01831d4e5aa4",
+          "targets": [
+            [
+              "css=.btn-teal:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@type='button' and text()='Get Started'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Get Started')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "linkText=Generator",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "f747ddf8-e92e-4f6d-8b4a-31dec9cc1a33",
+          "targets": [
+            [
+              "linkText=Generator",
+              "linkText"
+            ],
+            [
+              "css=.sidebar-li:nth-child(2) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Generator')])[1]",
+              "xpath:link"
+            ],
+            [
+              "xpath=(//a[contains(@href, 'generator.html')])[1]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//a[contains(.,' Generator')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=generateNavbar",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "c051e62d-3cfa-486a-9834-ea16ea0b9434",
+          "targets": [
+            [
+              "id=generateNavbar",
+              "id"
+            ],
+            [
+              "css=[data-component=\"Navbar\"]",
+              "css:data-attr"
+            ],
+            [
+              "css=#generateNavbar",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='generateNavbar'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Navbar')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "assertText",
+          "target": "css=.m-0",
+          "value": "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\"> <a class=\"navbar-brand\" href=\"#\">Navbar</a> <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"> <span class=\"navbar-toggler-icon\"></span> </button> <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"> <ul class=\"navbar-nav mr-auto\"> <li class=\"nav-item active\"> <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a> </li> <li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\">Link</a> </li> <li class=\"nav-item dropdown\"> <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Dropdown </a> <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\"> <a class=\"dropdown-item\" href=\"#\">Action</a> <a class=\"dropdown-item\" href=\"#\">Another action</a> <div class=\"dropdown-divider\"></div> <a class=\"dropdown-item\" href=\"#\">Something else here</a> </div> </li> <li class=\"nav-item\"> <a class=\"nav-link disabled\" href=\"#\">Disabled</a> </li> </ul> <form class=\"form-inline my-2 my-lg-0\"> <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\"> <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button> </form> </div> </nav>",
+          "id": "37b8efbe-ead8-4259-b299-cc429774b872",
+          "fallbackTargets": [
+            [
+              "css=.m-0",
+              "css:finder"
+            ],
+            [
+              "xpath=//pre[contains(.,'<nav class=\"navbar navbar-expand-lg navbar-light bg-light\"> <a class=\"navbar-brand\" href=\"#\">Navbar</a> <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\" aria-label=\"Toggle navigation\"> <span class=\"navbar-toggler-icon\"></span> </button> <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\"> <ul class=\"navbar-nav mr-auto\"> <li class=\"nav-item active\"> <a class=\"nav-link\" href=\"#\">Home <span class=\"sr-only\">(current)</span></a> </li> <li class=\"nav-item\"> <a class=\"nav-link\" href=\"#\">Link</a> </li> <li class=\"nav-item dropdown\"> <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarDropdown\" role=\"button\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\"> Dropdown </a> <div class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\"> <a class=\"dropdown-item\" href=\"#\">Action</a> <a class=\"dropdown-item\" href=\"#\">Another action</a> <div class=\"dropdown-divider\"></div> <a class=\"dropdown-item\" href=\"#\">Something else here</a> </div> </li> <li class=\"nav-item\"> <a class=\"nav-link disabled\" href=\"#\">Disabled</a> </li> </ul> <form class=\"form-inline my-2 my-lg-0\"> <input class=\"form-control mr-sm-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\"> <button class=\"btn btn-outline-success my-2 my-sm-0\" type=\"submit\">Search</button> </form> </div> </nav>')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6c3aabf4-eaa3-4bc1-87dc-517cb07792fe",
+      "name": "test_generator_random_generate_button",
+      "commands": [
+        {
+          "id": "9eb37ebd-780d-4cc3-911b-f20bbabbaa8e",
+          "command": "open",
+          "target": "https://mehrbawan.github.io/swe632_hw3/generator.html",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=randomExample",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "3efce04c-4a10-4cca-85b3-ea9e21d2468e",
+          "targets": [
+            [
+              "id=randomExample",
+              "id"
+            ],
+            [
+              "css=#randomExample",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='randomExample'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Random Example')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "assertNotText",
+          "target": "css=.m-0",
+          "value": "// Your generated code will appear here",
+          "id": "47a27a61-4f7e-402c-b2d6-f8044a7203c8",
+          "fallbackTargets": [
+            [
+              "css=.m-0",
+              "css:finder"
+            ],
+            [
+              "xpath=//pre[contains(.,'<form> <div class=\"mb-3\"> <label for=\"name\" class=\"form-label\">Full Name</label> <input type=\"text\" class=\"form-control\" id=\"name\"> </div> <div class=\"mb-3\"> <label for=\"email\" class=\"form-label\">Email address</label> <input type=\"email\" class=\"form-control\" id=\"email\"> </div> <div class=\"mb-3\"> <label for=\"password\" class=\"form-label\">Password</label> <input type=\"password\" class=\"form-control\" id=\"password\"> </div> <button type=\"submit\" class=\"btn btn-success\">Register</button> </form>')]",
+              "xpath:innerText"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "04be089e-b286-4123-adb1-776468a3fbf7",
+      "name": "test_analyze_upload",
+      "commands": [
+        {
+          "id": "d5a010b3-1cb8-4c66-86f6-7d5254740b78",
+          "command": "open",
+          "target": "https://mehrbawan.github.io/swe632_hw3/analyze.html",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "css=.btn:nth-child(4)",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "0e612b37-64a7-486e-a33b-e9bba2e940d8",
+          "targets": [
+            [
+              "css=.btn:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[contains(.,'Choose File')]",
+              "xpath:innerText"
+            ]
+          ],
+          "fallbackTargets": [
+            [
+              "css=.btn:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[contains(.,'Choose File')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "assertNotText",
+          "target": "id=aiReportContent",
+          "value": "No analysis yet. Click \"Analyze\" or \"Choose File\" to generate a report.",
+          "id": "22282995-a5fb-4860-bff1-9be495965aa7",
+          "fallbackTargets": [
+            [
+              "id=aiReportContent",
+              "id"
+            ],
+            [
+              "css=#aiReportContent",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='aiReportContent'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "68886a8c-cec5-4f33-81ae-e37126925dbd",
+      "name": "test_codereview_ifempty",
+      "commands": [
+        {
+          "id": "50893eda-7f38-4dfa-be3b-d5035fb2667c",
+          "command": "open",
+          "target": "https://mehrbawan.github.io/swe632_hw3/code-review.html",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=submitReview",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "649370cf-ab34-4869-a1d8-6c5b22a037d2",
+          "targets": [
+            [
+              "id=submitReview",
+              "id"
+            ],
+            [
+              "css=#submitReview",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='submitReview'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Submit for Review')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=submitReview",
+          "value": "",
+          "id": "f42e11d1-8c9b-4bad-a637-4c28f9537339",
+          "fallbackTargets": [
+            [
+              "id=submitReview",
+              "id"
+            ],
+            [
+              "css=#submitReview",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='submitReview'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Submit for Review')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "assertText",
+          "target": "id=aiFeedback",
+          "value": "Please paste some code before submitting for review.",
+          "id": "dd7f8d8c-bbce-41c7-b17d-8a746448f1c6",
+          "fallbackTargets": [
+            [
+              "id=aiFeedback",
+              "id"
+            ],
+            [
+              "css=#aiFeedback",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='aiFeedback'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d7b1df09-febb-4087-864c-2abbdbacb223",
+      "name": "test_codereview_ifnotempty",
+      "commands": [
+        {
+          "id": "3caeba57-5b14-4645-a842-30dfde8ccae6",
+          "command": "open",
+          "target": "https://mehrbawan.github.io/swe632_hw3/code-review.html",
+          "value": ""
+        },
+        {
+          "command": "click",
+          "target": "id=codeInput",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "807e766b-9756-4b1a-a7ce-9f8d33ae3a5a",
+          "targets": [
+            [
+              "id=codeInput",
+              "id"
+            ],
+            [
+              "css=#codeInput",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='codeInput'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "type",
+          "target": "id=codeInput",
+          "value": "test code",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "d2f5274c-60b2-47d0-8798-3742dee3c972",
+          "targets": [
+            [
+              "id=codeInput",
+              "id"
+            ],
+            [
+              "css=#codeInput",
+              "css:finder"
+            ],
+            [
+              "xpath=(//textarea[@id='codeInput'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=submitReview",
+          "value": "",
+          "insertBeforeLastCommand": false,
+          "frameLocation": "root",
+          "winHandleId": "root",
+          "id": "57a4ac3e-f91b-4595-839b-5202975cb896",
+          "targets": [
+            [
+              "id=submitReview",
+              "id"
+            ],
+            [
+              "css=#submitReview",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='submitReview'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Submit for Review')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "click",
+          "target": "id=submitReview",
+          "value": "",
+          "id": "fd4566c4-adab-493a-8166-c57d85b972cb",
+          "fallbackTargets": [
+            [
+              "id=submitReview",
+              "id"
+            ],
+            [
+              "css=#submitReview",
+              "css:finder"
+            ],
+            [
+              "xpath=(//button[@id='submitReview'])[1]",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//button[contains(.,'Submit for Review')]",
+              "xpath:innerText"
+            ]
+          ]
+        },
+        {
+          "command": "assertNotText",
+          "target": "id=aiFeedback",
+          "value": "No feedback yet. Paste your code and click \"Submit for Review\" to get suggestions.",
+          "id": "481599f0-4cd5-42f9-8341-5f7910ebb371",
+          "fallbackTargets": [
+            [
+              "id=aiFeedback",
+              "id"
+            ],
+            [
+              "css=#aiFeedback",
+              "css:finder"
+            ],
+            [
+              "xpath=(//div[@id='aiFeedback'])[1]",
+              "xpath:attributes"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "snapshot": {
+    "dependencies": {},
+    "tests": [],
+    "jest": {
+      "extraGlobals": []
+    }
+  }
+}
